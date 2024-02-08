@@ -8,7 +8,7 @@ const app=express()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb+srv://nasla:nasla1711@cluster0.f8gbros.mongodb.net/covidDb?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://nasla:nasla1711@cluster0.f8gbros.mongodb.net/mechanicDb?retryWrites=true&w=majority",{
     useNewUrlParser:true
 })
 
