@@ -17,4 +17,10 @@ router.get("/view",async(req,res)=>{
     res.json(data)
 })
 
+router.post("/search",async(req,res)=>{
+    let input=req.body
+    let data=await mechanicModel.find(input)
+    res.json(data)
+})
+
 module.exports=router
